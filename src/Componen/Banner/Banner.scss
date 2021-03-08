@@ -1,0 +1,28 @@
+.banner-mainDIv{
+    background-image: url("../../Resources/bannerbackground.png") ;
+    background-position: cover;
+}
+h4{
+    padding-top: 8%;
+}
+.form-section{
+    background-color: rgb(44, 42, 42);
+    display: inline-block;
+    padding: 0 0px 0 10px;
+    border-radius: 21px;
+}
+input{
+    color: rgb(190, 0, 0);
+    border: none;
+    background-color: transparent;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    color: rgb(241, 0, 0) ;
+}
+.btn{
+    border-radius: 30px;
+    padding: 5px 20px;
+}

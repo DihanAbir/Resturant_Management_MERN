@@ -1,0 +1,27 @@
+/* .logindiv{
+    margin-top: 100px;
+} */
+
+input::placeholder {
+    color: gray!important;
+    border: none;
+    background-color: #b3afaf3b;
+}
+/* input{
+    margin-top:10px;
+} */
+form {
+    border: 1px solid red;
+    padding: 40px;
+    width: 330px;
+}
+
+.main-section{
+    height: 100vh;
+    background: url(../../Resources/bannerbackground.png) ;
+    background-position: center center;
+    background-size: cover;
+    /* display: flex; */
+    /* align-items: center ;
+    justify-content: center;  */
+}

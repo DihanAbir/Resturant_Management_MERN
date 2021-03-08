@@ -1,0 +1,10 @@
+.seeMore, .seeMore i{
+    color: green;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.seeMore:hover i{
+    color: red;
+    margin-left: 8px!important;
+}
