@@ -8,12 +8,25 @@ const Cart = () => {
     <div>
       <p>cart {cart.length}</p>
       {cart.map((cartItem) => (
-        <div className="border">
+        <div
+          className="m-3 p-3"
+          style={{
+            background: "#grey",
+            border: "10px solid salmon",
+            borderRadius: "10px",
+          }}
+        >
           <p>Name: {cartItem.name}</p>
           <p>Price: {cartItem.price}</p>
           <p>Quantity: {cartItem.quantity.totalQuantity}</p>
-          <h6 className="text-success">Total Tax: {cartItem.price * cartItem.quantity.totalQuantity * 0.15}</h6>
-          <h1>Total price: {cartItem.price * cartItem.quantity.totalQuantity}</h1>
+          <h6 className="text-success">
+            Total Tax: {cartItem.price * cartItem.quantity.totalQuantity * 0.15}
+          </h6>
+          <h1>
+            Total price:{" "}
+            {cartItem.price * cartItem.quantity.totalQuantity +
+              cartItem.price * cartItem.quantity.totalQuantity * 0.15}
+          </h1>
         </div>
       ))}
     </div>

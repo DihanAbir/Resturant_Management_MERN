@@ -9,7 +9,7 @@ const Login = () => {
 
   return (
     <div className="container-fluid main-section">
-        <Link to="/" className="text-light">
+      <Link to="/" className="text-light">
         <button className="btn btn-primary">Home </button>
       </Link>
       <div className="row">
@@ -23,28 +23,86 @@ const Login = () => {
           <form>
             {submit === "sign in" ? (
               <div>
-                <input placeholder="First name" />
-                <input placeholder="Last name" />
+                <input
+                  style={{
+                    borderRadius: "10px",
+                    padding: "5px",
+                    background: "white",
+                    margin: "10px",
+                    border: "1px solid black",
+                  }}
+                  placeholder="First name"
+                />
+                <input
+                  style={{
+                    borderRadius: "10px",
+                    padding: "5px",
+                    background: "white",
+                    margin: "10px",
+                    border: "1px solid black",
+                  }}
+                  placeholder="Last name"
+                />
                 <input className="btn btn-success" type="submit" />
+                <div className="mt-2">
+                  <button className="mr-1 btn btn-danger">Google</button>
+                  <button className="ml-1 btn btn-danger">Facebook</button>
+                </div>
               </div>
             ) : (
               <div>
-                <input placeholder="First name" />
-                <input placeholder="Last name" />
-                <input placeholder="Email" />
-                <input placeholder="Password" />
+                <input
+                  style={{
+                    borderRadius: "10px",
+                    padding: "5px",
+                    background: "white",
+                    margin: "10px",
+                    border: "1px solid black",
+                  }}
+                  placeholder="First name"
+                />
+                <input
+                  style={{
+                    borderRadius: "10px",
+                    padding: "5px",
+                    background: "white",
+                    margin: "10px",
+                    border: "1px solid black",
+                  }}
+                  placeholder="Last name"
+                />
+                <input
+                  style={{
+                    borderRadius: "10px",
+                    padding: "5px",
+                    background: "white",
+                    margin: "10px",
+                    border: "1px solid black",
+                  }}
+                  placeholder="Email"
+                />
+                <input
+                  style={{
+                    borderRadius: "10px",
+                    padding: "5px",
+                    background: "white",
+                    margin: "10px",
+                    border: "1px solid black",
+                  }}
+                  placeholder="Password"
+                />
                 <input className="btn btn-success" type="submit" />
               </div>
             )}
           </form>
           <button
-            className="btn btn-warning"
+            className="mr-1 mt-2 text-primary  btn btn-warning"
             onClick={() => setSubmit("sign up")}
           >
             Sign up
           </button>
           <button
-            className="btn btn-warning"
+            className="ml-1  mt-2 text-primary btn btn-warning"
             onClick={() => setSubmit("sign in")}
           >
             Sign In
