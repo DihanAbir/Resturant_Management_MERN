@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import logo from "../../Resources/logo2.png";
+// import logo from "../../Resources/Custome/logo.png";
 import "./Header.scss";
 
 import { cup } from "../../Icons/Icons";
@@ -14,14 +14,15 @@ const Header = () => {
     <div className="container-fluid py-4 header-section">
       <div className="row justify-content-between">
         <div className="col-2 ">
-          <Link to="/">
+          <Link style={{ textDecoration: "none" }} to="/">
             <div className="logo">
-              <img className="img-fluid" src={logo} alt="logo" />
+              {/* <img className="img-fluid" src={logo} alt="logo" /> */}
+              <p>DeBila</p>
             </div>
           </Link>
         </div>
 
-        <div className="col-3">
+        <div className="col-4">
           <ul className="d-flex justify-content-between list-unstyled">
             <Link to="/Cart">
               <li className="btn btn-light">
@@ -30,6 +31,12 @@ const Header = () => {
             </Link>
             <Link to="/Login">
               <li className="btn btn-primary">Login</li>
+            </Link>
+            <Link to="/blog">
+              <li className="btn btn-primary">Blog</li>
+            </Link>
+            <Link to="/dashboard">
+              <li className="btn btn-primary">Dashboard</li>
             </Link>
             {/* <Link to="/todo">
               <li className="btn btn-primary">Todo</li>

@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { cartContext } from "../../App";
 
 const Cart = () => {
@@ -6,7 +7,6 @@ const Cart = () => {
 
   return (
     <div>
-      <p>cart {cart.length}</p>
       {cart.map((cartItem) => (
         <div
           className="m-3 p-3"
@@ -29,6 +29,16 @@ const Cart = () => {
           </h1>
         </div>
       ))}
+
+      {cart.length === 0 ? (
+        <h1 className="mt-5 text-center text-danger border ">
+          Your Cart Is Empty
+        </h1>
+      ) : (
+        <Link to="/checkOut">
+          <button className="btn btn-primary">CheckOut</button>
+        </Link>
+      )}
     </div>
   );
 };

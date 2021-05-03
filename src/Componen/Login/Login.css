@@ -2,11 +2,7 @@
     margin-top: 100px;
 } */
 
-input::placeholder {
-    color: gray!important;
-    border: none;
-    background-color: #b3afaf3b;
-}
+
 /* input{
     margin-top:10px;
 } */

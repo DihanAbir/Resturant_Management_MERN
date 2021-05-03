@@ -9,9 +9,6 @@ const Login = () => {
 
   return (
     <div className="container-fluid main-section">
-      <Link to="/" className="text-light">
-        <button className="btn btn-primary">Home </button>
-      </Link>
       <div className="row">
         <div className="col-2 m-auto">
           <div>

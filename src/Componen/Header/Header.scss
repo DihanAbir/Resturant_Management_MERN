@@ -1,6 +1,12 @@
 @import "../../scss/rootStyle.scss";
 
-
-.header-section{
-    background-color:  $brandColor1;
+.header-section {
+  background-color: $brandColor1;
+}
+.logo p,
+.logo p:hover {
+  text-decoration: none !important;
+  color: rgb(0, 195, 255);
+  font-size: 25px;
+  font-weight: bold;
 }

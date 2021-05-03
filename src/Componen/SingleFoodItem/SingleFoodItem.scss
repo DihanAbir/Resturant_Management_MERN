@@ -1,6 +1,7 @@
-.cartInput{
-    color: #be0000;
+.cartInput,.cartInput::placeholder{
+    color: #ffffff!important;
     border: none;
-    background-color: #c3bdbd!important;
-    width: 40px!important;
+    background-color: #0c0c0c!important;
+    border-radius: 30px;
+    width: 60px!important;
 }

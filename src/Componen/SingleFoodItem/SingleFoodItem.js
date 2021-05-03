@@ -45,9 +45,6 @@ const SingleFoodItem = () => {
 
   return (
     <div className="container">
-      <Link to="/" className="text-light">
-        <button className="btn btn-primary">Home </button>
-      </Link>
       <div className="row" style={{ marginTop: "6%" }}>
         <div className="col-6">
           <h1 className="text-danger">{name}</h1>
@@ -66,7 +63,7 @@ const SingleFoodItem = () => {
                 type="number"
                 placeholder="1"
                 onChange={quantityhandler}
-                className="cartInput"
+                className="cartInput px-2"
               />
             </div>
           </div>
