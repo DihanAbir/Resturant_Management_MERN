@@ -2,22 +2,21 @@
     margin-top: 100px;
 } */
 
-
 /* input{
     margin-top:10px;
 } */
-form {
-    border: 1px solid red;
-    padding: 40px;
-    width: 330px;
+.login form {
+  border: 1px solid red;
+  padding: 40px !important;
+  width: 330px;
 }
 
-.main-section{
-    height: 100vh;
-    background: url(../../Resources/bannerbackground.png) ;
-    background-position: center center;
-    background-size: cover;
-    /* display: flex; */
-    /* align-items: center ;
+.main-section {
+  height: 100vh;
+  background: url(../../Resources/bannerbackground.png);
+  background-position: center center;
+  background-size: cover;
+  /* display: flex; */
+  /* align-items: center ;
     justify-content: center;  */
 }

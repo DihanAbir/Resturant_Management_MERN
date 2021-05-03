@@ -8,7 +8,7 @@ const Login = () => {
   const [submit, setSubmit] = useState("sign in");
 
   return (
-    <div className="container-fluid main-section">
+    <div className="login  container-fluid main-section">
       <div className="row">
         <div className="col-2 m-auto">
           <div>

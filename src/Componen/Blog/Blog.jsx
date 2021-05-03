@@ -52,12 +52,12 @@ function Blog() {
       <div className=" container-fluid blog-showcase ">
         <div className="row">
           {/* ---------*********** */}
-          <div className="col-md-6 mt-5">
+          <div className="col-6 mt-5">
             <div className="image">
               <img className="img-fluid" src={showcaseImage4} alt="" />
             </div>
           </div>
-          <div className="col-md-6 mt-5  container">
+          <div className="col-6 mt-5  container">
             <div className="singleDesc  text-center">
               <h3>23 | 05 | 2014</h3>
               <h3>Exquisite Flavours and Ingredients</h3>
@@ -71,7 +71,7 @@ function Blog() {
             </div>
           </div>
           {/* ---------*********** ---------*********** */}
-          <div className="col-md-6 mt-5  container">
+          <div className="col-6 mt-5  container">
             <div className="singleDesc  text-center">
               <h3>12 | 05 | 2014</h3>
               <h3>Craftsmanship of Cooking and Tradition</h3>
@@ -83,18 +83,18 @@ function Blog() {
               </p>
             </div>
           </div>
-          <div className="col-md-6 mt-5">
+          <div className="col-6 mt-5">
             <div className="image">
               <img className="img-fluid" src={showcaseImage} alt="" />
             </div>
           </div>
           {/* ---------*********** ---------*********** */}
-          <div className="col-md-6 mt-5">
+          <div className="col-6 mt-5">
             <div className="image">
               <img className="img-fluid" src={showcaseImage1} alt="" />
             </div>
           </div>
-          <div className="col-md-6 mt-5  container">
+          <div className="col-6 mt-5  container">
             <div className="singleDesc  text-center">
               <h3>18 | 04 | 2014</h3>
               <h3>People are Everything</h3>
@@ -108,7 +108,7 @@ function Blog() {
             </div>
           </div>
           {/* ---------*********** ---------*********** */}
-          <div className="col-md-6 mt-5  container">
+          <div className="col-6 mt-5  container">
             <div className="singleDesc  text-center">
               <h3>23 | 05 | 2014</h3>
               <h3>Exquisite Flavours and Ingredients</h3>
@@ -120,18 +120,18 @@ function Blog() {
               </p>
             </div>
           </div>
-          <div className="col-md-6 mt-5">
+          <div className="col-6 mt-5">
             <div className="image">
               <img className="img-fluid" src={showcaseImage2} alt="" />
             </div>
           </div>
           {/* ---------*********** ---------*********** */}
-          <div className="col-md-6 mt-5">
+          <div className="col-6 mt-5">
             <div className="image">
               <img className="img-fluid" src={showcaseImage3} alt="" />
             </div>
           </div>
-          <div className="col-md-6 mt-5  container">
+          <div className="col-6 mt-5  container">
             <div className="singleDesc  text-center">
               <h3>23 | 05 | 2014</h3>
               <h3>Exquisite Flavours and Ingredients</h3>

@@ -8,10 +8,10 @@ const Banner = () => {
     <div style={{ height: "75vh" }} className="banner-mainDIv text-center">
       <div>
         <h4>Best Food is waiting for you belly</h4>
-        <div>
-          <form className="mt-4s form-section">
+        <div className="search">
+          <form className="form-section">
             <input type="text" placeholder="Search your food " />
-            <button className="btn my-2  btn-danger">Search</button>
+            <button className="btn mx-2 my-1  btn-danger">Search</button>
           </form>
         </div>
       </div>

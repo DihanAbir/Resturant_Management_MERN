@@ -16,7 +16,6 @@ const Header = () => {
         <div className="col-2 ">
           <Link style={{ textDecoration: "none" }} to="/">
             <div className="logo">
-              {/* <img className="img-fluid" src={logo} alt="logo" /> */}
               <p>DeBila</p>
             </div>
           </Link>
