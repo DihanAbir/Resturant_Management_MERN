@@ -5,18 +5,11 @@ import "./FaqImage.scss";
 
 const Faqimages = ({ image }) => {
   return (
-    <div className="col-4">
+    <div className="col-4 ">
       <div className="img">
         <img src={image} className="img-fluid" alt="prepared male " />
       </div>
       <div className="row  mt-3">
-        <div className="col-2">
-          <div className="icon">
-            <i>
-              <FontAwesomeIcon icon={cup} />
-            </i>
-          </div>
-        </div>
         <div className="col-10">
           <b>Fast dalivery</b>
           <p>
@@ -25,9 +18,6 @@ const Faqimages = ({ image }) => {
           </p>
           <div className="seeMore d-flex">
             <p>See more</p>
-            <i className="ml-1">
-              <FontAwesomeIcon icon={cup} />
-            </i>
           </div>
         </div>
       </div>

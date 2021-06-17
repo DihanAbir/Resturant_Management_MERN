@@ -9,20 +9,33 @@ import { cartContext } from "../../App";
 
 const Header = () => {
   const [cart, setCart] = useContext(cartContext);
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 5 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      document.getElementById("header").style.padding = "40px";
+    } else {
+      document.getElementById("header").style.padding = "10px";
+    }
+  }
 
   return (
-    <div className="container-fluid py-4 header-section">
+    <div className="container-fluid header-section">
       <div className="row justify-content-between">
-        <div className="col-2 ">
+        {/* <div className="col-2 "></div> */}
+
+        <div id="header" className="col-12 d-flex justify-content-between">
           <Link style={{ textDecoration: "none" }} to="/">
-            <div className="logo">
+            <div className="">
               <p>DeBila</p>
             </div>
           </Link>
-        </div>
-
-        <div className="col-4">
-          <ul className="d-flex justify-content-between list-unstyled">
+          <ul className=" list-unstyled">
             <Link to="/Cart">
               <li className="btn btn-light">
                 <FontAwesomeIcon icon={cup} /> {cart.length}

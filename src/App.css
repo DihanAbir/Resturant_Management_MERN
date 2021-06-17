@@ -4,9 +4,25 @@
 .headFont h1 {
   font-family: -webkit-pictograph;
 }
+.headerTitle {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-transform: capitalize;
+  margin: 3rem 0px 3rem;
+}
 .w-50 {
   width: 50% !important;
   margin: 0 auto !important;
 }
 .faq .desc {
+}
+.Link {
+  color: rgb(2, 0, 31) !important;
+}
+.underline {
+  height: 1px;
+  width: 3rem;
+  display: inline-block;
+  background: #dc3545;
+  transition: 0.3s ease-in-out;
 }

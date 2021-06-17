@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../Resources/logo2.png";
 import "./Footer.scss";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const footeritems = [
@@ -18,13 +19,18 @@ const Footer = () => {
 
   return (
     <div className="container-fluid" style={{ backgroundColor: "#000" }}>
+      <button className="topbutton">
+        {" "}
+        <Link to="/">Top</Link>
+      </button>
+
       <div className="row py-4 container">
         <div className="col-2 offset-col-4">
           <div className="logo">
             <p>DeBila</p>
           </div>
         </div>
-        <div className="date text-center col-3">
+        <div className="copywrite text-center col-3">
           <p>Monday - Thursday</p>
           <p>7.00 - 21.00</p>
           <p>Friday - Sunday</p>
@@ -46,7 +52,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="row py-4">
-        <div className="col-4">
+        <div className="copywrite col-4">
           <p>Copyright @2020 Onion red</p>
         </div>
         <div className="offset-4 col-4">

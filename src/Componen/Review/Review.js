@@ -1,53 +1,88 @@
 import React from "react";
-import "./Review.scss";
-import profile from "../../Resources/Image/chef-cook-food-33614.png";
-import ReviewSlider from "./ReviewSlider";
+import "react-slideshow-image/dist/styles.css";
+import { Slide } from "react-slideshow-image";
 
-function Review() {
+import "./Review.scss";
+
+// images
+const slideImages = [
+  {
+    comment:
+      "This is the minimum amount of context you need to provide. However, to make your writing even stronger, you could add more to your contextualization, such as:",
+    image:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    user: "Mregel-smith, Data Science",
+  },
+  {
+    comment:
+      "This is the minimum amount of context you need to provide. However, to make your writing even stronger, you could add more to your contextualization, such as:",
+    image:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    user: "NErabel-smith, Data Science",
+  },
+  {
+    comment:
+      "This is the minimum amount of context you need to provide. However, to make your writing even stronger, you could add more to your contextualization, such as:",
+    image:
+      "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    user: "rocifa-smith, Data Science",
+  },
+  {
+    comment:
+      "This is the minimum amount of context you need to provide. However, to make your writing even stronger, you could add more to your contextualization, such as:",
+    image:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    user: "jordan -smith, Data Science",
+  },
+];
+
+function Reviews({ reviews }) {
   return (
-    <div className="primary-spacing headFont container-fluid text-center">
-      <h1>Our Client's Review</h1>
-      <div className="reviewSection">
-        <div className="main-div py-5 container">
-          <ReviewSlider />
+    <div style={{ marginBottom: "150px" }} className=" slider container">
+      <section className="slider text-center">
+        <h1 className="headerTitle">Client's Reviews</h1>
+        <div>
+          <Slide easing="ease">
+            {reviews
+              ? reviews
+              : slideImages.map((user) => (
+                  <div
+                    style={{
+                      border: "1px solid #e9e9e9",
+                      padding: "10px",
+                      width: "60%",
+                      margin: "0 auto",
+                    }}
+                    className="each-slide"
+                  >
+                    <div
+                      className="image"
+                      style={{
+                        borderRadious: "50px",
+                      }}
+                    >
+                      <img
+                        style={{
+                          width: "15%",
+                          height: "100px",
+                          objectFit: "cover",
+                          borderRadious: "5px",
+                        }}
+                        src={user.image}
+                        alt=""
+                      />
+                    </div>
+                    <h5 className="slider-comment">{user.comment}</h5>
+                    <h6 className="slider-user">
+                      <i> -{user.user}</i>
+                    </h6>
+                  </div>
+                ))}
+          </Slide>
         </div>
-        {/* <div className="col-4 border-left">
-          <div className="row">
-            <div className="col-3 user">
-              <div className="image">
-                <img className="img-fluid" src={profile} alt="" />
-              </div>
-            </div>
-            <div className="col-8 review">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reprehenderit explicabo rem, ad eius ratione illum totam itaque
-                voluptates vitae asperiores modi maxime unde impedit, cum
-                officiis dolore nisi minus quos.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-4 border-left">
-          <div className="row">
-            <div className="col-3 user">
-              <div className="image">
-                <img className="img-fluid" src={profile} alt="" />
-              </div>
-            </div>
-            <div className="col-8 review">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reprehenderit explicabo rem, ad eius ratione illum totam itaque
-                voluptates vitae asperiores modi maxime unde impedit, cum
-                officiis dolore nisi minus quos.
-              </p>
-            </div>
-          </div>
-        </div> */}
-      </div>
+      </section>
     </div>
   );
 }
 
-export default Review;
+export default Reviews;

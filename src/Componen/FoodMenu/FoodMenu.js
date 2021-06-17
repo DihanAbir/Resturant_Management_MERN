@@ -22,7 +22,7 @@ const FoodMenu = () => {
   }, [selectedFood]);
 
   return (
-    <div className="primary-spacing buttonSection container mt-4 text-center">
+    <div className="buttonSection mt-4 text-center">
       <button
         className="btn btn-danger"
         onClick={changeFoodMenuHandler}

@@ -6,6 +6,7 @@ import showcaseImage1 from "../../Resources/Blog/chad-montano-eeqbbemH9-c-unspla
 import showcaseImage2 from "../../Resources/Blog/edgar-castrejon-1SPu0KT-Ejg-unsplash.jpg";
 import showcaseImage3 from "../../Resources/Blog/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash.jpg";
 import showcaseImage4 from "../../Resources/Blog/jay-wennington-N_Y88TWmGwA-unsplash.jpg";
+import { Link } from "react-router-dom";
 
 function Blog() {
   return (
@@ -59,7 +60,11 @@ function Blog() {
           </div>
           <div className="col-6 mt-5  container">
             <div className="singleDesc  text-center">
-              <h3>23 | 05 | 2014</h3>
+              <Link className="Link" to="/singleBlog">
+                {" "}
+                <h3>23 | 05 | 2014</h3>
+              </Link>
+
               <h3>Exquisite Flavours and Ingredients</h3>
               <span className="title"></span>
               <p>
@@ -73,7 +78,10 @@ function Blog() {
           {/* ---------*********** ---------*********** */}
           <div className="col-6 mt-5  container">
             <div className="singleDesc  text-center">
-              <h3>12 | 05 | 2014</h3>
+              <Link className="Link" to="/singleBlog">
+                {" "}
+                <h3>23 | 05 | 2014</h3>
+              </Link>
               <h3>Craftsmanship of Cooking and Tradition</h3>
               <span className="title"></span>
               <p>
@@ -96,7 +104,10 @@ function Blog() {
           </div>
           <div className="col-6 mt-5  container">
             <div className="singleDesc  text-center">
-              <h3>18 | 04 | 2014</h3>
+              <Link className="Link" to="/singleBlog">
+                {" "}
+                <h3>23 | 05 | 2014</h3>
+              </Link>
               <h3>People are Everything</h3>
               <span className="title"></span>
               <p>
@@ -110,7 +121,10 @@ function Blog() {
           {/* ---------*********** ---------*********** */}
           <div className="col-6 mt-5  container">
             <div className="singleDesc  text-center">
-              <h3>23 | 05 | 2014</h3>
+              <Link className="Link" to="/singleBlog">
+                {" "}
+                <h3>23 | 05 | 2014</h3>
+              </Link>
               <h3>Exquisite Flavours and Ingredients</h3>
               <span className="title"></span>
               <p>
@@ -133,7 +147,10 @@ function Blog() {
           </div>
           <div className="col-6 mt-5  container">
             <div className="singleDesc  text-center">
-              <h3>23 | 05 | 2014</h3>
+              <Link className="Link" to="/singleBlog">
+                {" "}
+                <h3>23 | 05 | 2014</h3>
+              </Link>
               <h3>Exquisite Flavours and Ingredients</h3>
               <span className="title"></span>
               <p>

@@ -2,10 +2,18 @@ ul li {
   cursor: pointer;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: gray;
+  color: rgb(206, 206, 206);
   transition: 0.34s ease-in-out;
 }
 ul li:hover {
   color: red;
   margin-left: 8px;
+}
+.copywrite {
+  color: rgb(255, 255, 255);
+}
+.topbutton {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
 }

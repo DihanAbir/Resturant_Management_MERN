@@ -1,4 +1,6 @@
 .banner-mainDIv {
+  // position: absolute;
+  // margin-top: 12%;
   background-image: url("../../Resources/bannerbackground.png");
   background-position: cover;
 }
@@ -7,7 +9,8 @@
   color: #000620;
   font-size: 45px;
   font-weight: bold;
-  font-family: monospace;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .search .form-section {
   background-color: rgb(44, 42, 42);
